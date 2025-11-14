@@ -1,0 +1,26 @@
+# Fichiers de configuration
+config/config.php
+
+# Dossier d'uploads
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PHP
+vendor/
+composer.lock
+
+# Environnement
+.env

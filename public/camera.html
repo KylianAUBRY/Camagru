@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camagru - Caméra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Camagru</a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="camera.html">Caméra</a></li>
+                <li><a href="#" id="logoutLink">Déconnexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="camera-container">
+            <h2>Prendre une photo</h2>
+            <div class="camera-wrapper">
+                <video id="video" autoplay></video>
+                <canvas id="canvas"></canvas>
+            </div>
+            
+            <div class="stickers-panel">
+                <h3>Stickers</h3>
+                <div id="stickersContainer" class="stickers-grid">
+                    <!-- Les stickers seront chargés dynamiquement -->
+                </div>
+            </div>
+
+            <div class="camera-controls">
+                <button id="captureBtn" class="btn">Prendre une photo</button>
+                <button id="uploadBtn" class="btn btn-secondary">Uploader une image</button>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                <button id="saveBtn" class="btn btn-success" style="display: none;">Sauvegarder</button>
+            </div>
+        </div>
+
+        <div class="my-photos">
+            <h2>Mes photos</h2>
+            <div id="myPhotosContainer" class="images-grid">
+                <!-- Les photos de l'utilisateur seront chargées ici -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/camera.js"></script>
+</body>
+</html>
