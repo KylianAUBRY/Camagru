@@ -1,0 +1,5 @@
+.env
+src/public/uploads/*
+!src/public/uploads/.gitkeep
+*.log
+.DS_Store
